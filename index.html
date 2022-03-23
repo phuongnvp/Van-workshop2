@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Van Week 5</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="Stylesheet" type="text/css" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <br />
+    <h1 class="title">Welcome to Van's weather app!</h1>
+    <br />
+    <form class="weathercity" id="form" autocomplete="off">
+      <input
+        id="cityinput"
+        type="text"
+        placeholder="Enter your city here"
+        autofocus="off"
+      />
+      <input type="submit" name="Submit" value="Send" />
+    </form>
+    <br />
+    <button class="currentlocation" id="currentlocation">
+      Check your Current Location
+    </button>
+    <br />
+    <div class="currentcity">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3"></div>
+          <div class="col-xl-3">
+            <span class="city" id="city">Paris</span>
+            <br />
+            <span class="Date" id="Date"><strong></strong></span>
+          </div>
+          <div class="col-xl-3 d-flex align-items-center">
+            <span class="temp" id="temp">20</span> <br />
+            <span class="function"
+              ><a href="#" id="FtoC"> &#176;C </a>
+              |
+              <a href="#" id="CtoF"> &#176;F </a></span
+            >
+          </div>
+          <div class="col-xl-4"></div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="tempofnext5day">
+      <div class="nextday">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3"></div>
+            <div class="col-xl-3" id="nextdate"></div>
+            <div class="col-xl-2">
+              <div class="nexttemp">
+                &#x2601;&#xFE0F; 20&#176;C <br />
+                &#x2601;&#xFE0F; 20&#176;C <br />
+                &#x2601;&#xFE0F; 20&#176;C <br />
+                &#x2601;&#xFE0F; 20&#176;C <br />
+                &#x2601;&#xFE0F; 20&#176;C <br />
+              </div>
+            </div>
+            <div class="col-xl-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="wish">
+      Have a good day which is full of love, joy and happiness!
+    </div>
+    <br />
+    <div class="signature">Coded by Van</div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
